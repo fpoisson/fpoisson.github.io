@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:500,600';
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-align: center;
+  background-color: transparent;
+  color:  #00A9FF;
+}
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #383533;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #262626;
+}
+:focus {
+  outline: 2px solid #6495ed;
+}
+body.using-mouse :focus {
+  outline: none;
+}
+.main-layout {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 4rem;
+}
+header.main-header {
+  height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+header.main-header a {
+  text-decoration: none;
+}
+div.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+div.title img {
+  min-width: 93px;
+  min-height: 84px;
+}
+div.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  color: #FFFFFF;
+}
+div.text span.name {
+  width: 100%;
+  white-space: nowrap;
+}
+span.name {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  font-size: 3.6rem;
+  letter-spacing: -0.02em;
+}
+span.description {
+  font-weight: 600;
+  line-height: 2.3rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+main {
+  padding: 4rem 6rem;
+  background: #fff;
+  #border: 1px solid #dadada;
+  border-radius: 30px;
+}
+h1 {
+  font-weight: 600;
+  line-height: 3.5rem;
+  font-size: 3.6rem;
+  letter-spacing: -0.02em;
+}
+h2 {
+  margin-top: 4rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+p {
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-size: 1.5rem;
+}
+main ul, main ol {
+  padding-left: 3rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+main a {
+  margin-right: 4rem;
+}
+p a {
+  margin-right: 0rem;
+}
+main a:hover {
+  color: #FF0061;
+  background-color: transparent;
+  text-decoration: underline;
+}
+footer.main-footer {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 730px) {
+  header.main-header {
+    height: 10rem;
+  }
+  div.text {
+    margin-left: 1.7rem;
+  }
+  span.name {
+    line-height: 2.6rem;
+    font-size: 2.6rem;
+  }
+  span.description {
+    line-height: 1.8rem;
+    font-size: 1.8rem;
+  }
+  div.title {
+    margin-right: 0;
+  }
+  div.title img {
+    height: 60px;
+    min-height: 60px;
+    width: 66px;
+    min-width: 66px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .main-layout {
+    padding: 0 2rem;
+  }
+  main {
+    padding: 2rem 3rem;
+  }
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2.6rem;
+  }
+  h2 {
+    margin-top: 3rem;
+    line-height: 1.9rem;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-layout {
+    padding: 0 1rem;
+  }
+  div.title img {
+    height: 52px;
+    width: 58px;
+    min-height: 52px;
+    min-width: 58px;
+  }
+  span.name {
+    line-height: 2.2rem;
+    font-size: 2.2rem;
+  }
+  span.description {
+    line-height: 1.3rem;
+    font-size: 1.4rem;
+  }
+  footer.main-footer {
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  header.main-header {
+    padding: 1rem 1rem;
+  }
+  div.title {
+    display: block;
+  }
+  div.text {
+    display: inline-block;
+    width: 200px;
+  }
+  span.name {
+    max-width: 207px;
+    line-height: 3.6rem;
+  }
+  span.description {
+    max-width: 207px;
+  }
+}
